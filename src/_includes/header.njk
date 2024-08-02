@@ -1,0 +1,44 @@
+<header class="page-header">
+    <nav class="navbar">
+        <div class="logo">
+                <a href="./">
+                    <img class="logo-img" src="../assets/image/logo-small.png" alt="">
+                </a>
+            </div>
+        <div class="nav-links">
+            <ul>
+                    <li><a href="./">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Product & Service</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Recruitment</a></li>
+            </ul>
+        
+        </div>
+        
+        
+            <a class = "contact-link" href="">
+            <button class="contact-head">
+                Contact us
+            </button></a>
+
+        <div class="menu-btn">
+                <div class="hamburger-icon" id="icon">
+                        <div class="icon-1" id="a"></div>
+                        <div class="icon-2" id="b"></div>
+                        <div class="icon-3" id="c"></div>
+                        <div class="clear"></div>
+                </div>
+        </div>
+        <div class="lang-box">
+            <img class="icon-select {{ 'select_lang' | i18n }}" src="" alt="">
+            <span class="lang-select">{{ 'select_lang' | i18n }}</span>
+            <i class='bx bx-chevron-down lang-drop'></i>
+            <div class="lang-list">
+            {% include "components/language.njk" %}
+            </div>
+        </div>
+
+    </nav>
+</header>
+<script src="/header.js"></script>

@@ -13,9 +13,9 @@
   </head>
   <body class="{{ body_class }}">
     {% include 'header.njk' %}
-    {% block main %}
+
     {{ content | safe }}
-    {% endblock %}
+
     {% include 'footer.njk' %}
 
     

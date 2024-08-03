@@ -3,7 +3,7 @@
 {% if locales.length %}
 
             {% for locale in locales -%}
-            <li><img src="{{ locale.flag }}"><a class="lang-type" href="/{{ locale.code }}/{{ pageUrl }}" rel="alternate" hreflang="{{ locale.code }}">{{ locale.label }}</a></li>
+            <li><a class="lang-type" href="/{{ locale.code }}/{{ pageUrl }}" rel="alternate" hreflang="{{ locale.code }}"><img src="{{ locale.flag }}">{{ locale.label }}</a></li>
           {% endfor -%}
 
 {% endif %}

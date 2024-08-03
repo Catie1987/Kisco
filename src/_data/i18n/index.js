@@ -6,6 +6,12 @@ module.exports = {
       'jp': 'JP'
     },
 
+    select_flag: {
+      'en': 'EN',
+      'vn': 'VN',
+      'jp': 'JP'
+    },
+
     hello: {
       'en': 'Hello',
       'vn': 'Xin Chào',

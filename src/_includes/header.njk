@@ -1,26 +1,24 @@
 <header class="page-header">
     <nav class="navbar">
         <div class="logo">
-                <a href="./">
-                    <img class="logo-img" src="../assets/image/logo-small.png" alt="">
+                <a href="/{{ locale }}/">
+                    <img class="logo-img" src="../../assets/image/logo-small.png" alt="">
                 </a>
-            </div>
-        <div class="nav-links">
-            <ul>
-                    <li><a href="./">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Product & Service</a></li>
-                    <li><a href="">News</a></li>
-                    <li><a href="">Recruitment</a></li>
-            </ul>
-        
         </div>
-        
-        
-            <a class = "contact-link" href="">
+        <div class="nav-links">
+            <ul role="list">
+                    <li><a href="/{{ locale }}/">Home</a></li>
+                    <li><a href="/{{ locale }}/about/">About</a></li>
+                    <li><a href="/{{ locale }}/business/">Product & Service</a></li>
+                    <li><a href="/{{ locale }}/news/">News</a></li>
+                    <li><a href="/{{ locale }}/recruit/">Recruitment</a></li>
+            </ul>
+            <a class = "contact-link" href="/{{ locale }}/contact/">
             <button class="contact-head">
                 Contact us
             </button></a>
+        </div>
+        
 
         <div class="menu-btn">
                 <div class="hamburger-icon" id="icon">
@@ -31,7 +29,7 @@
                 </div>
         </div>
         <div class="lang-box">
-            <img class="icon-select {{ 'select_lang' | i18n }}" src="" alt="">
+            <img class="flag{{ 'select_lang' | i18n }}" alt="">
             <span class="lang-select">{{ 'select_lang' | i18n }}</span>
             <i class='bx bx-chevron-down lang-drop'></i>
             <div class="lang-list">

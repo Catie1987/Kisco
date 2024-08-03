@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "elevent"
+    "build": "eleventy"
   },
   "author": "",
   "license": "ISC",

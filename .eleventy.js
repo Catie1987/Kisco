@@ -1,10 +1,16 @@
 const i18n = require('eleventy-plugin-i18n');
 const translations = require('./src/_data/i18n');
+const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('./src/style.css');
     eleventyConfig.addPassthroughCopy("./src/header.js");
     eleventyConfig.addPassthroughCopy('./src/assets');
+
+    eleventyConfig.addFilter("postDate", (dateObj)=>{
+      return DateTime.fromJSDate(dateObj).
+      toLocaleString(DateTime.DATE_MED);
+  });
 
   // Plugins
   eleventyConfig.addPlugin(i18n, {

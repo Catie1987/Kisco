@@ -55,6 +55,7 @@ dd {
   margin: 0;
 }
 
+
 ul:where([role="list"]),
 ol:where([role="list"]) {
   list-style: none;
@@ -148,10 +149,11 @@ red {
   height: 4.6785rem;
   border-bottom: 1px solid var(--line-style1);
   position: fixed;
-  width: 100%;
+  width: 100vw;
   display: flex;
   background: var(--menubar);
   z-index: 999;
+  margin: 0;
 }
 
 
@@ -190,6 +192,7 @@ red {
   gap: 20px;
   background: var(--menubar);
   z-index: 999;
+  width: 100%;
 }
 
 .page-header nav .nav-links ul {
@@ -659,6 +662,10 @@ section p{
   max-width: 52em;
 }
 
+section.product {
+  width: 100%;
+}
+
 .product-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20em, auto));
@@ -705,8 +712,7 @@ section p{
     /////////////////////// */
   
   .region-content {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(21em, auto));
+      display: flex;
       align-items: center;
       margin-top: 3.2rem;
       color:var(--normal-text);
@@ -717,7 +723,7 @@ section p{
 
   @media (max-width: 65em) {
     .region-content {
-      max-width: 100%;
+      flex-direction: column;
       gap: 0;
     }
   }
@@ -1135,6 +1141,7 @@ section p{
 
 .input-top {
   display: flex;
+  flex-wrap: wrap;
   gap: 2em;
 }
 
@@ -1181,6 +1188,7 @@ form .send-btn:hover{
   .contact-area  {
     flex-direction: column;
   }
+
 }
   /* //////////////////////
     Footer

@@ -706,7 +706,7 @@ section p{
   
   .region-content {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(24em, auto));
+      grid-template-columns: repeat(auto-fit, minmax(21em, auto));
       align-items: center;
       margin-top: 3.2rem;
       color:var(--normal-text);

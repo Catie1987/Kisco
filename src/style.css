@@ -149,7 +149,7 @@ red {
   height: 4.6785rem;
   border-bottom: 1px solid var(--line-style1);
   position: fixed;
-  width: 100vw;
+  width: 100%;
   display: flex;
   background: var(--menubar);
   z-index: 999;
@@ -192,7 +192,6 @@ red {
   gap: 20px;
   background: var(--menubar);
   z-index: 999;
-  width: 100%;
 }
 
 .page-header nav .nav-links ul {

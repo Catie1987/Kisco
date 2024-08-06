@@ -98,10 +98,10 @@ title: KISCO (VIETNAM) LTD
 
 </section>
 
-<section class="region">
+<section class="region" id="locate">
         <h1>Our <red>Offices</red></h1>
         <p>We have 2 offices in Vietnam and able to provide service all over country.<br> Please feel free and take you time to visit our office so we can discuss business and let us know more about you.</p>
-        <div class="region-content" id="locate">
+        <div class="region-content">
             <div class="region-box north">
                 <img src="/assets/region/hanoi.jpg" alt="">
                 <div class="layer">
@@ -162,18 +162,51 @@ title: KISCO (VIETNAM) LTD
                 <div class="achivement-box">
                     <i class='bx bxs-factory'></i>
                     <h3>Manufacture</h3>
-                    <h5>2 Factories in Vietnam</h5>
+                    <p><strong>2</strong> Factories in Vietnam</p>
                 </div>
                 <div class="achivement-box">
                     <i class='bx bxs-briefcase' ></i>
                     <h3>Business</h3>
-                    <h5>150+ Active Happy Customers</h5>
+                    <p><strong>150+</strong> Active Happy Customers</p>
                 </div>
                 <div class="achivement-box">
                     <i class='bx bxs-award' ></i>
                     <h3>Experiences</h3>
-                    <h5>16+ Years in Vietnam market</h5>
+                    <p><strong>16+</strong> Years in Vietnam market</p>
                 </div>
+            </div>
+        </div>
+        <div class="contact-area">
+            <div class="contact-detail">
+                <div class="contact-box">
+                    <h3>How can we help you?</h3>
+                    <p>Let us help you to create winning products for your target markets.<br>Get in touch with our industry experts to discuss what Kisco can do for your business.</p>
+                </div>
+                <div class="contact-btn">
+                    <button onclick="location.href='./contact/'" class="btn call-btn">Contact Us</button>
+                    <button onclick="downloadFile()" class="btn">Download Catalogue<i class='bx bx-download' ></i></button>
+                   
+                </div>
+                <div class="social-icons">
+                    <span>Or Follow Us</span>
+                    <ul>
+                    <a href="#" class="icon"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="icon"><i class='bx bxl-youtube'></i></a>
+                    <a href="#" class="icon"><i class="bx bxl-linkedin"></i></a>
+                    <a href="#" class="icon"><i class='bx bxl-instagram' ></i></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="form-handler.php" method="post">
+                    <div class = "input-top">
+                    <input type="text" name ="name" placeholder="Your name" required>
+                    <input type="email" name ="email" placeholder="Email Address" required>
+                    </div>
+                    <input type="subject" name ="subject" placeholder="Subject" required>
+                    <textarea name="message" id="" cols="30" rows="5" placeholder="Write Message Here...." required></textarea>
+                    <input type="submit" name="" value="Send Message" class="send-btn">
+                </form>
             </div>
         </div>
     </section>

@@ -9,7 +9,46 @@ title: KISCO (VIETNAM) LTD
 {% block main %}
 
 <main class="sub-page">
-About
+    <div class="main-box about">
+        <div class="text-box">
+            <h1>ABOUT US</h1>
+        </div>
+    </div>
+    <div class="title-bar">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="./overview">Overview</a></div>
+            <div class="swiper-slide"><a href="./location">Locations</a></div>
+            <div class="swiper-slide"><a href="./history">Corporate History</a></div>
+            <div class="swiper-slide"><a href="./message">Message</a></div>
+        </div>
+        <div class="swiper-button-prev"><i id="left" class='bx bxs-left-arrow'></i></div>
+        <div class="swiper-button-next"><i id="right" class='bx bxs-right-arrow'></i></div>
+    </div>
+    </div>
 
 </main>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".swiper", {
+        slidesPerView: 2,
+        spaceBetween: 10,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    breakpoints: {
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+    },
+  });
+
+console.log("hello");
+</script>
 {% endblock %}

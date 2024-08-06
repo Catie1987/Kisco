@@ -6,16 +6,6 @@ title: KISCO (VIETNAM) LTD
 {% extends "base.njk" %}
 {% block main %}
 <main class="sub-page">
-<article class="main-article">
-<div class="container container--narrow flow">
 
-<ul role="list" class="articles__list flow">
-  {%- for post in collections.post | reverse -%}
-    {% include 'article-snippet.njk' %}
-  {%- endfor %}
-  </ul>
-  
-</div>
-</article>
 </main>
 {% endblock %}

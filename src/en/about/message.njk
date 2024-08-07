@@ -1,0 +1,84 @@
+---
+title: KISCO (VIETNAM) LTD
+
+---
+{% set body_class = "about" %}
+{% extends "base.njk" %}
+{% block main %}
+<main class="sub-page">
+    <div class="main-box about">
+        <div class="text-box">
+            <h1>ABOUT US</h1>
+        </div>
+        <div class="path">
+            <p><a href="/{{ locale }}/">Home</a></p><i class='bx bx-chevron-right' ></i><p><a href="/{{ locale }}/about/">About</a></p><i class='bx bx-chevron-right' ></i><p><a href="">Message</a></p>
+        </div>
+    </div>
+    <div class="title-bar">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="/{{ locale }}/about/overview">Overview</a></div>
+            <div class="swiper-slide"><a href="/{{ locale }}/about/location">Locations</a></div>
+            <div class="swiper-slide"><a href="/{{ locale }}/about/history">Corporate History</a></div>
+            <div class="swiper-slide"><a class="active" href="/{{ locale }}/about/message">Message</a></div>
+        </div>
+        <div class="swiper-button-prev"><i id="left" class='bx bxs-left-arrow'></i></div>
+        <div class="swiper-button-next"><i id="right" class='bx bxs-right-arrow'></i></div>
+    </div>
+    </div>
+
+    <section class="message">
+        <h1>With <red>Collaboration</red></h1>
+        <div class="message-content">
+            <div class="message-top">
+                <i class='bx bxs-quote-left bx-flip-vertical' ></i>
+                <div class="message-text">
+                    <p>
+                        The development of civilization has progressed in tandem with the development of materials. Through the Stone, Bronze, and Iron Ages to the modern era of new materials, our way of life has progressed in step with the materials we have used, leading to the emergence of new materials bringing innovation and change. KISCO LTD. was founded in 1921 with the aim of establishing a role as an intermediary serving our customers with access to advanced materials. Since then, KISCO has provided the foundation for new product development through corporate activities that take advantage of our experience and achievements as a specialist trading company supplying the advanced materials of each era. Nowadays, the scope of our activities extends to not only the provision of consulting services for materials selection, manufacturing processes but also to encompassing the supply of products developed by ourselves that meet the material needs of our customers.
+                        <br>
+                        KISCO produces genuine value by providing maximum satisfaction to our customers as a broad-based provider of materials solutions that give due consideration to product quality, cost, and the environment.
+                        <br>
+                        For the future, KISCO intends to contribute to society by continuing to pursue the endless potential inherent in materials with the aim of "building a better tomorrow" while supporting industrial progress through collaboration with our customers.
+                    </p>
+                </div>
+                <i class='bx bxs-quote-right' ></i>
+            </div>
+            <div class="message-bottom">
+                <div class="sign">
+                    <p>President</p>
+                    <p>Goichi Kishimoto</p>
+                </div>
+            </div>
+        </div>
+        <div class="vl"></div>
+    <div class="send-email">
+        <button onclick="location.href='mailto:info@kisco-net.vn';"><i class='bx bx-envelope' ></i>E-mail Us</button>
+    </div>
+    </section>
+
+    
+</main>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".swiper", {
+        slidesPerView: 2,
+        spaceBetween: 10,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    breakpoints: {
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+    },
+  });
+
+
+</script>
+{% endblock %}

@@ -1,0 +1,111 @@
+---
+title: KISCO (VIETNAM) LTD
+
+---
+{% set body_class = "about" %}
+{% extends "base.njk" %}
+{% block main %}
+<main class="sub-page">
+    <div class="main-box about">
+        <div class="text-box">
+            <h1>ABOUT US</h1>
+        </div>
+        <div class="path">
+            <p><a href="/{{ locale }}/">Home</a></p><i class='bx bx-chevron-right' ></i><p><a href="/{{ locale }}/about/">About</a></p><i class='bx bx-chevron-right' ></i><p><a href="">Overview</a></p>
+        </div>
+    </div>
+    <div class="title-bar">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a class="active" href="/{{ locale }}/about/overview">Overview</a></div>
+            <div class="swiper-slide"><a href="/{{ locale }}/about/location">Locations</a></div>
+            <div class="swiper-slide"><a href="/{{ locale }}/about/history">Corporate History</a></div>
+            <div class="swiper-slide"><a href="/{{ locale }}/about/message">Message</a></div>
+        </div>
+        <div class="swiper-button-prev"><i id="left" class='bx bxs-left-arrow'></i></div>
+        <div class="swiper-button-next"><i id="right" class='bx bxs-right-arrow'></i></div>
+    </div>
+    </div>
+
+    <section class="overview">
+            <h1>Company <red>Overview</red></h1>
+        <div class="wrapper">
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <td>Company Name</td>
+                        <td>Kisco (Vietnam) Ltd</td>
+                    </tr>
+                    <tr>
+                        <td>Established</td>
+                        <td>March, 26, 2007</td>
+                    </tr>
+                    <tr>
+                        <td>Paid-in Capital</td>
+                        <td>15,500,000,000 VND</td>
+                    </tr>
+                    <tr>
+                        <td>Stockolders equity</td>
+                        <td>Kisco (Asia) Pte. Ltd. owns 100% of the shares</td>
+                    </tr>
+                    <tr>
+                        <td>Domestic Office</td>
+                        <td class="two-col">
+                            <h5>Head Office in Hanoi
+                                <span>TEL. +84-24-3772-5405</span>
+                            </h5>
+                            <h5>Branch in Ho Chi Minh city
+                                <span>TEL. +84-28-3636-3734</span>
+                            </h5>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>General Director</td>
+                        <td>Nakayama Tomohiro</td>
+                    </tr>
+                    <tr>
+                        <td>Number of employees</td>
+                        <td>18 (including 2 Japanese)</td>
+                    </tr>
+                    <tr>
+                        <td>Bank Information</td>
+                        <td>Sumitomo Mitsui Banking Corporation - Hanoi Branch</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="tooltip">
+            <p>Latest update on June 2024</p>
+        </div>
+        <div class="vl"></div>
+    <div class="send-email">
+        <button onclick="location.href='mailto:info@kisco-net.vn';"><i class='bx bx-envelope' ></i>E-mail Us</button>
+    </div>
+    </section>
+
+</main>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".swiper", {
+        slidesPerView: 2,
+        spaceBetween: 10,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    breakpoints: {
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+    },
+  });
+
+
+</script>
+{% endblock %}

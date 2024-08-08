@@ -1,7 +1,8 @@
 ---
 title: KISCO (VIETNAM) LTD
 ---
-
+{% set mainCat = page.url.split('/').slice(3, 4) %}
+{% set subCat = page.url.split('/').slice(4).join('') %}
 {% set body_class = "business" %}
 {% extends "base.njk" %}
 {% block main %}
@@ -12,10 +13,10 @@ title: KISCO (VIETNAM) LTD
         <h1>PRODUCTS & SERVICES</h1>
     </div>
     <div class="path">
-        <p><a href="/{{ locale }}/">Home</a></p><i class='bx bx-chevron-right' ></i><p><a href="/{{ locale }}/business">Business</a></p>
+        <p><a href="/{{ locale }}/">Home</a></p><i class='bx bx-chevron-right' ></i><p><a href="/{{ locale }}/business">Business</a></p><i class='bx bx-chevron-right' ></i><p><a href="">Electronic</a></p>
     </div>
 </div>
-{% set title_class = "" %}
+{% set title_class = mainCat + ' ' + subCat %}
 {% include "components/titlebar.njk" %}
     
     <section class="product-sub">
@@ -25,6 +26,5 @@ title: KISCO (VIETNAM) LTD
         <h1>KSV <red>Principles</red></h1>
     </section>
 </main>
-
 
 {% endblock %}

@@ -546,7 +546,14 @@ main {
 
 .main-box.about {
   height: 50vh;
+  margin-top: 4em;
   
+}
+
+.main-box.business {
+  margin-top: 4em;
+  height: 50vh;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(71,0,0,0.7)), url(../assets/product/banner1.jpg);
 }
 
 .main-box .text-box{
@@ -560,7 +567,6 @@ main {
     text-align: center;
     color: #ffffff;
     align-items: center;
-    padding-top: 4.6785rem;
     z-index: 10;
     transform: translateY(20%);
     opacity: 0;
@@ -1317,13 +1323,28 @@ footer .footer-box .footer-bottom {
     width: 100%;
     height: 2em;
     background-color: var(--title-bar);
+    transition: all 0.3s ease-out;
   }
+
+  .title-bar.active {
+    height: 18.2em;
+  }
+
+  .title-bar.active .swiper i::after {
+    height: 18.2em;
+    top: -8.6em;
+  }
+
+
+
   .swiper {
-    height: 2em;
+    height: 100%;
     background: var(--title-bar);
     max-width: 72em;
     position: relative;
   }
+
+
 
   .swiper-wrapper{
     display: flex;
@@ -1347,8 +1368,15 @@ footer .footer-box .footer-bottom {
     font-weight: var(--fs-500);
     margin-top: 0.3em;
     white-space: nowrap;
+    text-decoration: none;
   }
-  .swiper-slide a.active {
+
+  .title-bar.electronic .swiper-slide a.electronic,
+  .title-bar.plastic .swiper-slide a.plastic,
+  .title-bar.chemical .swiper-slide a.chemical,
+  .title-bar.biotechnology .swiper-slide a.biotechnology,
+  .title-bar.lifescience .swiper-slide a.lifescience,
+  .title-bar.parylene .swiper-slide a.parylene {
     text-decoration: none;
     color: var(--active-text);
     font-weight: var(--fw-500);
@@ -1362,7 +1390,6 @@ footer .footer-box .footer-bottom {
   .swiper i::after {
     content: "";
     width: 3em;
-    height: 100%;
     top: -0.5em;
     height: 2em;
     left: -1em;
@@ -1378,7 +1405,99 @@ footer .footer-box .footer-bottom {
   .swiper-button-next i {
     background: linear-gradient(90deg, var(--title-bar) 80%, transparent);
   }
-  
+
+  .swiper .sub-tabs {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--progress-bar);
+    margin-top: 4px;
+    padding-top: 10px;
+}
+
+.swiper .sub-tabs a {
+  text-decoration: none;
+  font-size: var(--fs-300);
+  color: var(--normal-text);
+  font-weight: var(--fw-300);
+
+}
+
+.swiper .sub-tabs a:hover {
+  color: var(--main-text);
+  font-weight: var(--fw-500);
+}
+
+.title-bar.solder .sub-tabs a.solder,
+.title-bar.epoxy .sub-tabs a.epoxy,
+.title-bar.adhesive .sub-tabs a.adhesive,
+.title-bar.enhance .sub-tabs a.enhance,
+.title-bar.display .sub-tabs a.display,
+.title-bar.semicon .sub-tabs a.semicon,
+.title-bar.rfid .sub-tabs a.rfid,
+.title-bar.hotrunner .sub-tabs a.hotrunner,
+.title-bar.gerplastic .sub-tabs a.gerplastic,
+.title-bar.enrplasctic .sub-tabs a.enrplasctic,
+.title-bar.compound .sub-tabs a.compound,
+.title-bar.daiki .sub-tabs a.daiki,
+.title-bar.purging .sub-tabs a.purging,
+.title-bar.basicchem .sub-tabs a.basicchem,
+.title-bar.solvent .sub-tabs a.solvent,
+.title-bar.cleaning .sub-tabs a.cleaning,
+.title-bar.glue.sub-tabs a.glue,
+.title-bar.ink .sub-tabs a.ink,
+.title-bar.cate .sub-tabs a.cate,
+.title-bar.spiber .sub-tabs a.spiber,
+.title-bar.sesame .sub-tabs a.sesame,
+.title-bar.vegoil .sub-tabs a.vegoil,
+.title-bar.seed .sub-tabs a.seed,
+.title-bar.package .sub-tabs a.package,
+.title-bar.variant .sub-tabs a.variant,
+.title-bar.plasma .sub-tabs a.plasma,
+.title-bar.ald .sub-tabs a.ald,
+.title-bar.multilayer .sub-tabs a.multilayer {
+  color: var(--main-text);
+  font-weight: var(--fw-500);
+}
+
+
+section.product-sub {
+  padding-top: 0;
+}
+
+section .show-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 5em;
+  z-index: 1;
+  transform: translateY(-20%);
+}
+
+section .show-title .btn-drop {
+  color: var(--main-text);
+  padding: 0.1em 1.8em;
+  font-size: var(--fs-500);
+  border-radius: 0 0 0.3em 0.3em;
+  background: var(--bg2);
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 0 2px 5px #c5c5c5;
+}
+
+section .show-title .btn-drop i {
+  margin-top: 0.2em;
+}
+
+section .show-title .btn-drop.active i{
+  transform: rotate(180deg);
+}
+
+section .show-title .btn-drop:active{
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
     /* //////////////////////
     Main-sub
     /////////////////////// */
@@ -1778,7 +1897,7 @@ tr:hover td:first-child {
 }
 
 .location .loc-detail .att img.img-office{
-  border: 2px solid var(--menubar-side);
+  border: 2px solid var(--active-color);
 }
 
 .location .loc-detail .att img.img-factory{
@@ -1803,7 +1922,7 @@ tr:hover td:first-child {
   display: inline-block;
   text-decoration: none;
   margin-top: 5px;
-  color: var(--link-text);
+  color: var(--active-text);
   font-weight: 500;
 }
 .location .loc-row a:hover {
@@ -2081,6 +2200,12 @@ tr:hover td:first-child {
     font-weight: var(--fw-700);
     text-shadow: 0 2px 4px var(--progress-bar);
 }
+/*--------------------------Business------------------------*/
+
+section.product-sub {
+  position: relative;
+}
+
 
 /*--------------------------Send Email------------------------*/
 .vl {

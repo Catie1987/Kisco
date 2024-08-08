@@ -1,0 +1,98 @@
+<div class="title-bar {{ title_class }}">
+    
+        <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a class="electronic" href="/{{ locale }}/business/electronic">Electronic</a>
+            <li class="sub-tabs">
+                    <a class = "solder" href="/{{ locale }}/business/electronic/solder/">Solder Material</a>
+                    <a class = "epoxy" href="/{{ locale }}/business/electronic/epoxy/">Modified Epoxy Resin</a>
+                    <a class = "adhesive" href="/{{ locale }}/business/electronic/adhesive/">Silicone & Adhesive</a>
+                    <a class = "enhance" href="/{{ locale }}/business/electronic/enhance/">PCB Enhancement</a>
+                    <a class = "display" href="/{{ locale }}/business/electronic/display/">Display</a>
+                    <a class = "semicon" href="/{{ locale }}/business/electronic/semicon/">Semiconductor</a>
+                    <a class = "rfid" href="/{{ locale }}/business/electronic/rfid/">RFID</a>
+                </li>
+            </div>
+            <div class="swiper-slide"><a class="plastic" href="/{{ locale }}/business/plastic">Plastic & Resin</a>
+            <li class="sub-tabs">
+                    <a class = "hotrunner" href="/{{ locale }}/business/plastic/hotrunner/">Hot Runner System</a>
+                    <a class = "gerplastic" href="/{{ locale }}/business/plastic/gerplastic/">General Plastic</a>
+                    <a class = "enrplasctic" href="/{{ locale }}/business/plastic/enrplasctic/">Engineering Plastic</a>
+                    <a class = "compound" href="/{{ locale }}/business/plastic/compound/">Compounding</a>
+                    <a class = "daiki" href="/{{ locale }}/business/plastic/daiki/">Daiki Rubber</a>
+                    <a class = "purging" href="/{{ locale }}/business/plastic/purging/">Purging Plastic</a>
+        
+                </li>
+            </div>
+            <div class="swiper-slide"><a class="chemical" href="/{{ locale }}/business/chemical">Chemical</a>
+                <li class="sub-tabs">
+                    <a class = "basicchem" href="/{{ locale }}/business/chemical/basicchem/">Basic Chemical</a>
+                    <a class = "solvent" href="/{{ locale }}/business/chemical/solvent/">Solvent</a>
+                    <a class = "cleaning" href="/{{ locale }}/business/chemical/cleaning/">Cleaning Agent</a>
+                    <a class = "glue" href="/{{ locale }}/business/chemical/glue/">Glue for Wood & Paper</a>
+                    <a class = "ink" href="/{{ locale }}/business/chemical/ink/">Ink and Additives</a>
+
+                </li>
+            </div>
+            <div class="swiper-slide"><a class="biotechnology" href="/{{ locale }}/business/biotechnology">Biotechnology</a>
+              <li class="sub-tabs">
+                    <a class = "cate" href="/{{ locale }}/business/biotechnology/cate/">Cate Protect</a>
+                    <a class = "spiber" href="/{{ locale }}/business/biotechnology/spiber/">SPIBER</a>
+
+                </li>
+            </div>
+            <div class="swiper-slide"><a class="lifescience" href="/{{ locale }}/business/lifescience">Life Science</a>
+              <li class="sub-tabs">
+                    <a class = "sesame" href="/{{ locale }}/business/lifescience/sesame/">Sesame Seeds</a>
+                    <a class = "vegoil" href="/{{ locale }}/business/lifescience/vegoil/">Vegetable Oil</a>
+                    <a class = "seed" href="/{{ locale }}/business/lifescience/seed/">Other Fruit Seeds</a>
+                    <a class = "package" href="/{{ locale }}/business/lifescience/package/">Food Packaging</a>
+
+                </li>
+            </div>
+            <div class="swiper-slide"><a class="parylene" href="/{{ locale }}/business/parylene">Parylene Coating</a>
+              <li class="sub-tabs">
+                    <a class = "variant" href="/{{ locale }}/business/parylene/variant/">Parylene Variants</a>
+                    <a class = "plasma" href="/{{ locale }}/business/parylene/plasma/">Plasma Coating</a>
+                    <a class = "ald" href="/{{ locale }}/business/parylene/ald/">ALD Coatings</a>
+                    <a class = "multilayer" href="/{{ locale }}/business/parylene/multilayer/">Multilayer Coatings</a>
+
+                </li>
+            </div>
+        </div>
+        <div class="swiper-button-prev"><i id="left" class='bx bxs-left-arrow'></i></div>
+        <div class="swiper-button-next"><i id="right" class='bx bxs-right-arrow'></i></div>
+        
+        </div>
+    
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+
+
+    var swiper = new Swiper(".swiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+
+        1248: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+    },
+  });
+
+</script>

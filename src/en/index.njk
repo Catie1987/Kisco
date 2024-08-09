@@ -9,9 +9,9 @@ title: KISCO (VIETNAM) LTD
 <main>
     <div class="main-box">
         <div class="text-box">
-            <h1>WELCOME TO KISCO (VIETNAM) LTD</h1>
-            <p>Kisco Vietnam is a subsidary of Kisco group, the global company with 49 branches from 19 countries.<br>A global network that allows us to swiftly/accurately attain the lastest information and market trends regarding advanced material.</p>
-            <a href="#locate" class="hero-btn">Visit Us to know More</a>
+            <h1>{{ 'welcome' | i18n }}</h1>
+            <p>{{ 'welcometext' | i18n }}<br>{{ 'welcometext2' | i18n }}</p>
+            <a href="#locate" class="hero-btn">{{ 'herobtn1' | i18n }}</a>
         </div>
     </div>
     <div class="bg-sharp">
@@ -30,8 +30,8 @@ title: KISCO (VIETNAM) LTD
 
 </main>
 <section class="product">
-    <h1>Kisco's <red>Business</red></h1>
-        <p>Kisco Group create the ultimate values by aiming to provide the maximum satisfactions of our customers as integrated material solution providers. We always aim to provide optimal solutions by considering the quality, cost and environment.</p>
+    <h1><red>{{ 'sectiontitle1' | i18n }}</red></h1>
+        <p>{{ 'sectiontext1' | i18n }}</p>
 
     <div class="product-content">
         <div class="product-box">
@@ -99,7 +99,7 @@ title: KISCO (VIETNAM) LTD
 </section>
 
 <section class="region" id="locate">
-        <h1>Our <red>Offices</red></h1>
+        <h1><red>Our Offices</red></h1>
         <p>We have 2 offices in Vietnam and able to provide service all over country.<br> Please feel free and take you time to visit our office so we can discuss business and let us know more about you.</p>
         <div class="region-content">
             <div class="region-box north">

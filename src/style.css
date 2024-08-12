@@ -83,6 +83,12 @@ body {
   line-height: 1.5;
 }
 
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 a:not([class]) {
   text-decoration-skip-ink: auto;
   text-decoration: none;
@@ -157,7 +163,7 @@ red {
   display: flex;
   background: var(--menubar);
   z-index: 999;
-  margin: 0;
+
 }
 
 
@@ -169,7 +175,7 @@ red {
   padding-inline: 0.6em;
   width: 92rem;
   position: relative;
-  gap: 20px;
+  gap: 0px;
 }
 
 .page-header nav .logo a {
@@ -180,7 +186,7 @@ red {
 }
 
 .page-header nav .logo img {
-  width: clamp(120px, 40vw, 240px);
+  width: clamp(120px, 30vw, 240px);
 }
 
 .page-header nav .logo p {
@@ -322,6 +328,7 @@ red {
   overflow: hidden;
   font-size: var(--fs-300);
   font-family: var(--ff-body);
+  min-width: 8em;
 }
 
 .contact-head:hover {
@@ -365,6 +372,16 @@ red {
 
 
 @media (max-width: 65em) {
+  .page-header {
+    display: flex;
+    width: 100%;
+    gap: 0;
+    position: relative;
+  }
+
+  .page-header nav {
+    width: 100%;
+  }
 
   .page-header nav .nav-links {
     display: none;
@@ -520,8 +537,9 @@ red {
 @media (max-width: 65em) {
   .menu-btn {
     display: block;
-    margin-right: 5vw;
+    margin-right: 10vw;
   }
+
 }
 
 
@@ -546,12 +564,10 @@ main {
 
 .main-box.about {
   height: 50vh;
-  margin-top: 4em;
   
 }
 
 .main-box.business {
-  margin-top: 4em;
   height: 50vh;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(71,0,0,0.7)), url(../assets/product/banner1.jpg);
 }
@@ -682,6 +698,8 @@ section.product {
   gap: 2.3rem;
   margin-top: 2.8rem;
   color:var(--normal-text);
+  position: relative;
+  width: 100%;
 }
 
 .product-box h3{
@@ -1237,7 +1255,7 @@ footer .footer-row .footer-column {
   position: relative;
   color: var(--menu-text);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20em, auto));
+  grid-template-columns: repeat(auto-fit, minmax(18em, auto));
   gap: 1.6rem;
   margin-top: 1.5rem;
   width: 100%;
@@ -2351,7 +2369,7 @@ h2 {
 
 .part.second .list-column {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20em, auto));
+  grid-template-columns: repeat(auto-fit, minmax(18em, auto));
   align-items: center;
   gap: 2.3rem;
   color:var(--main-text);
@@ -2390,7 +2408,7 @@ section.sub-cat {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16em, auto));
+  grid-template-columns: repeat(auto-fit, minmax(18em, auto));
   align-items: center;
   gap: 2.3rem;
   color:var(--main-text);
@@ -2672,6 +2690,21 @@ section.sub-cat {
   }
   td.two-col {
       padding-right: 20%;
+  }
+
+}
+
+
+/*--------------------------all content------------------------*/
+
+@media (max-width: 65em) {
+  .product-content,
+  footer .footer-row .footer-column,
+  .value-col,
+  .part.second .list-column,
+  .sub-container,
+  .item-content  {
+    grid-template-columns: repeat(auto-fit, minmax(15em, auto));
   }
 
 }

@@ -1701,72 +1701,65 @@ section.value .row{
       margin-bottom: 3em;
   }
 
-  .table-container {
+  .overview .table-container {
     min-width: 100%;
 }
 
-table {
+.overview table {
     width: 100%;
     background: var(--bg1);
     border-collapse: collapse;
     color: var(--news-text);
 }
 
-td:first-child {
+.overview table td:first-child {
     font-weight: bold;
     min-width: 16em;
 }
-tr {
+.overview table tr {
     width: 100%;
 }
-td {
+.overview table td {
     padding: 1rem;
     font-weight: var(--fw-400);
     font-size: var(--fs-400);
 }
-td h5 {
+.overview table td h5 {
   font-weight: var(--fw-400);
   font-size: var(--fs-400);
 }
 
-tr:nth-of-type(2n) {
+.overview table tr:nth-of-type(2n) {
     background: var(--bg2);
 }
 
 
 
-td.two-col {
-    display: flex;
-    justify-content: space-between;
-    
-}
-
-
-td.two-col h5{
+.overview table td.two-col h5{
     position: relative;
     display: flex;
     flex-direction: column;
     min-width: 15em;
 }
 
-tr:hover {
+.overview table tr:hover {
     cursor: default;
 }
-tr:hover td:first-child {
+.overview table tr:hover td:first-child {
     color: var(--active-text);
 }
 
 @media (max-width: 65em) {
-  td {
+  .overview table td {
       display: block;
       padding: 0.5rem 1rem;
   }
-  td:last-child {
+  .overview table td:last-child {
       flex-wrap: wrap;
       margin-top: -10px;
       padding-bottom: 15px;
   }
-  td.two-col {
+  .overview table td.two-col {
       gap: 10px;
   }
 }

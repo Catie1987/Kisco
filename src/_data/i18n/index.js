@@ -143,5 +143,9 @@ module.exports = {
       'vn': 'Trụ sở chính Hà Nội',
 
     },
+    northaddress: {
+      'en': 'Hanoi Head Office',
+      'vn': 'Trụ sở chính Hà Nội',
 
+    },
   };
